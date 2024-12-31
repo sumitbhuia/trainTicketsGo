@@ -84,7 +84,7 @@ The server will start at `http://localhost:3000`.
 
 #### **Public Routes**
 1. **Register**:
-   - **URL**: `/auth/register`
+   - **URL**: `api/v1/auth/register`
    - **Method**: `POST`
    - **Payload**:
      ```json
@@ -106,7 +106,7 @@ The server will start at `http://localhost:3000`.
      ```
 
 2. **Login**:
-   - **URL**: `/auth/login`
+   - **URL**: `api/v1/auth/login`
    - **Method**: `POST`
    - **Payload**:
      ```json
@@ -128,7 +128,7 @@ The server will start at `http://localhost:3000`.
 #### **Protected Routes (JWT Required)**
 
 1. **Get Trains**:
-   - **URL**: `/trains`
+   - **URL**: `api/v1/trains`
    - **Method**: `GET`
    - **cURL**:
      ```bash
@@ -137,7 +137,7 @@ The server will start at `http://localhost:3000`.
      ```
 
 2. **Add Train**:
-   - **URL**: `/trains`
+   - **URL**: `api/v1/trains`
    - **Method**: `POST`
    - **Payload**:
      ```json
@@ -162,7 +162,7 @@ The server will start at `http://localhost:3000`.
      ```
 
 3. **Book Ticket**:
-   - **URL**: `/tickets`
+   - **URL**: `api/v1/tickets`
    - **Method**: `POST`
    - **Payload**:
      ```json
@@ -185,7 +185,7 @@ The server will start at `http://localhost:3000`.
      ```
 
 4. **Cancel Ticket**:
-   - **URL**: `/tickets/cancel`
+   - **URL**: `api/v1/tickets/cancel`
    - **Method**: `POST`
    - **Payload**:
      ```json
