@@ -26,25 +26,22 @@ Before setting up the project, ensure you have the following installed:
 trainTicketsGo/
 ├── main.go
 ├── routes/
-│   ├── auth.go
+│   ├── user.go
 │   ├── train.go
-│   ├── ticket.go
+│   └── ticket.go
 ├── controllers/
 │   ├── authController.go
 │   ├── trainController.go
-│   ├── ticketController.go
+│   └── ticketController.go
 ├── models/
 │   ├── user.go
 │   ├── train.go
-│   ├── ticket.go
+│   └── ticket.go
 ├── database/
-│   ├── db.go
+│   └── db.go
 ├── middlewares/
-│   ├── authMiddleware.go
-├── utils/
-│   ├── helpers.go
-├── config/
-│   ├── config.go
+│   └── authMiddleware.go
+├── go.sum
 └── go.mod
 ```
 
@@ -207,5 +204,5 @@ The server will start at `http://localhost:3000`.
 
 ### **Testing Instructions**
 1. Use the `curl` commands provided above or tools like [Postman](https://www.postman.com/) to test API endpoints.
-2. Ensure you have a valid JWT token for protected routes. You can get it by logging in using the `/auth/login` endpoint.
+2. Ensure you have a valid JWT token for protected routes. You can get it by logging in using the `api/v1/auth/login` endpoint.
 
